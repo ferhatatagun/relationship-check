@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ferhatatagun.github.io/relationship-check/sitemap.xml

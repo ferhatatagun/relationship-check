@@ -104,3 +104,12 @@ button.link { border: 0; background: none; color: var(--muted); padding: 8px 0; 
 .safety-box ul { margin: 8px 0 0; padding-left: 20px; }
 .safety { margin-top: 16px; font-size: 0.85rem; color: var(--muted); }
 button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.about { margin-top: 28px; font-size: 0.95rem; }
+.about h2 { font-size: 1.05rem; margin: 20px 0 8px; }
+.about ul, .about ol { padding-left: 20px; margin: 0 0 12px; }
+.about li { margin-bottom: 8px; }
+.about a, .site-foot a { color: var(--accent); }
+.refs { font-size: 0.85rem; color: var(--muted); }
+.refs a { word-break: break-all; }
+.site-foot { margin-top: 24px; font-size: 0.85rem; color: var(--muted); }
+[hidden] { display: none !important; }

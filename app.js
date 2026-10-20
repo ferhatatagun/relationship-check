@@ -3,6 +3,7 @@ import { score } from './src/engine.js';
 const UI = {
   en: {
     title: 'Relationship Check',
+    pageTitle: 'Relationship Check – free relationship quiz (EN/TR)',
     intro: 'A short, private self-reflection quiz about five parts of a relationship. It takes about 3 minutes. Answers stay in your browser and are never sent anywhere.',
     start: 'Start',
     question: (i, n) => `Question ${i} of ${n}`,
@@ -17,6 +18,7 @@ const UI = {
   },
   tr: {
     title: 'İlişki Kontrolü',
+    pageTitle: 'İlişki Kontrolü – ücretsiz ilişki testi (TR/EN)',
     intro: 'İlişkinin beş yönü hakkında kısa ve gizli bir kendini değerlendirme testi. Yaklaşık 3 dakika sürer. Cevaplarınız tarayıcınızda kalır, hiçbir yere gönderilmez.',
     start: 'Başla',
     question: (i, n) => `Soru ${i} / ${n}`,
@@ -61,8 +63,9 @@ async function setLang(lang) {
   state.answers = {};
   document.documentElement.lang = lang;
   const t = UI[lang];
-  document.title = t.title;
+  document.title = t.pageTitle;
   titleEl.textContent = t.title;
+  document.querySelectorAll('[data-content]').forEach((a) => { a.hidden = a.dataset.content !== lang; });
   langButtons.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lang === lang)));
   footer.replaceChildren(el('span', {}, t.note));
   render();
