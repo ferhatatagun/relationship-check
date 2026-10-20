@@ -3,7 +3,13 @@
   "scale": {
     "min": 1,
     "max": 5,
-    "labels": ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"]
+    "labels": [
+      "Strongly disagree",
+      "Disagree",
+      "Neutral",
+      "Agree",
+      "Strongly agree"
+    ]
   },
   "dimensions": {
     "communication": {
@@ -39,28 +45,24 @@
   },
   "questions": [
     { "id": "comm-1", "dimension": "communication", "text": "I can tell my partner what I really feel, even when it is uncomfortable." },
-    { "id": "comm-2", "dimension": "communication", "text": "My partner listens to me without interrupting or getting defensive." },
-    { "id": "comm-3", "dimension": "communication", "text": "We talk about more than daily logistics.", "weight": 1 },
-    { "id": "comm-4", "dimension": "communication", "text": "I often keep my worries to myself because speaking up feels pointless.", "reverse": true },
-
     { "id": "trust-1", "dimension": "trust", "text": "I believe my partner is honest with me." },
-    { "id": "trust-2", "dimension": "trust", "text": "When my partner says they will do something, they do it." },
-    { "id": "trust-3", "dimension": "trust", "text": "I feel secure when we are apart." },
-    { "id": "trust-4", "dimension": "trust", "text": "I sometimes check my partner's phone, messages or whereabouts.", "reverse": true },
-
-    { "id": "conf-1", "dimension": "conflict", "text": "We can disagree without it turning into personal attacks." },
-    { "id": "conf-2", "dimension": "conflict", "text": "After an argument, we make up and actually resolve the issue." },
-    { "id": "conf-3", "dimension": "conflict", "text": "Either of us can ask for a break during a heated moment and it is respected." },
     { "id": "conf-4", "dimension": "conflict", "text": "The same arguments keep coming back with no progress.", "reverse": true },
-
     { "id": "int-1", "dimension": "intimacy", "text": "I feel emotionally close to my partner." },
-    { "id": "int-2", "dimension": "intimacy", "text": "We are satisfied with the physical affection in our relationship." },
-    { "id": "int-3", "dimension": "intimacy", "text": "We make time for each other, just the two of us." },
-    { "id": "int-4", "dimension": "intimacy", "text": "I feel lonely even when we are together.", "reverse": true },
-
     { "id": "fut-1", "dimension": "future", "text": "We want similar things from life in the next five years." },
+    { "id": "comm-2", "dimension": "communication", "text": "My partner listens to me without getting defensive." },
+    { "id": "trust-4", "dimension": "trust", "text": "I feel the need to check my partner's phone or messages.", "reverse": true },
+    { "id": "conf-1", "dimension": "conflict", "text": "We can disagree without it turning into personal attacks." },
+    { "id": "int-2", "dimension": "intimacy", "text": "I am satisfied with the physical affection in our relationship." },
+    { "id": "fut-4", "dimension": "future", "text": "I avoid bringing up big future decisions.", "reverse": true },
+    { "id": "comm-3", "dimension": "communication", "text": "We talk about more than daily logistics." },
+    { "id": "trust-2", "dimension": "trust", "text": "When my partner says they will do something, they do it." },
+    { "id": "conf-2", "dimension": "conflict", "text": "After an argument, we manage to resolve the issue." },
+    { "id": "int-4", "dimension": "intimacy", "text": "I feel lonely even when we are together.", "reverse": true },
     { "id": "fut-2", "dimension": "future", "text": "We share the core values that matter most to me." },
-    { "id": "fut-3", "dimension": "future", "text": "I can picture us still together and happy in the long run." },
-    { "id": "fut-4", "dimension": "future", "text": "I avoid bringing up big future decisions because I fear the answer.", "reverse": true }
+    { "id": "comm-4", "dimension": "communication", "text": "I often keep my worries to myself.", "reverse": true },
+    { "id": "trust-3", "dimension": "trust", "text": "I feel secure when we are apart." },
+    { "id": "conf-3", "dimension": "conflict", "text": "When one of us asks for a break in a heated moment, the other respects it." },
+    { "id": "int-3", "dimension": "intimacy", "text": "We make time for each other, just the two of us." },
+    { "id": "fut-3", "dimension": "future", "text": "I can picture us together in the long run." }
   ]
 }
