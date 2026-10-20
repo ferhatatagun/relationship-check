@@ -6,6 +6,7 @@ const en = loadBank('en');
 const tr = loadBank('tr');
 
 const miniBank = (questions) => ({
+  safety: { text: 's', resources: [{ name: 'n', contact: 'c' }] },
   scale: { min: 1, max: 5 },
   dimensions: { a: { label: 'A' }, b: { label: 'B' } },
   questions,
@@ -68,6 +69,7 @@ test('reverse items invert the scale', () => {
 test('weights change the dimension score', () => {
   const bank = {
     scale: { min: 1, max: 5 },
+    safety: { text: 's', resources: [{ name: 'n', contact: 'c' }] },
     dimensions: { a: { label: 'A' } },
     questions: [
       { id: 'heavy', dimension: 'a', text: 't', weight: 3 },
@@ -100,5 +102,19 @@ test('EN and TR banks are structurally identical', () => {
     for (const lvl of ['label', 'low', 'mid', 'high']) {
       assert.ok(tr.dimensions[key][lvl], `tr.${key}.${lvl} missing`);
     }
+  }
+});
+
+test('banks without a safety notice are rejected', () => {
+  const { safety, ...rest } = en;
+  assert.throws(() => validateBank(rest), /bank\.safety/);
+  assert.throws(() => validateBank({ ...en, safety: { text: 's', resources: [] } }), /bank\.safety/);
+});
+
+test('every result carries the bank safety notice, even with no answers', () => {
+  for (const bank of [en, tr]) {
+    const result = score(bank, {});
+    assert.equal(result.safety, bank.safety);
+    assert.ok(result.safety.resources.length > 0);
   }
 });

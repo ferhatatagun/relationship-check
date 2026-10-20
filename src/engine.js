@@ -5,7 +5,10 @@ function fail(message) {
 }
 
 export function validateBank(bank) {
-  const { scale, dimensions, questions } = bank ?? {};
+  const { scale, dimensions, questions, safety } = bank ?? {};
+  if (!safety?.text || !Array.isArray(safety.resources) || safety.resources.length === 0) {
+    fail('bank.safety needs text and at least one resource');
+  }
   if (!scale || !Number.isInteger(scale.min) || !Number.isInteger(scale.max) || scale.min >= scale.max) {
     fail('bank.scale must have integer min < max');
   }
@@ -87,6 +90,7 @@ export function score(bank, answers) {
     dimensions,
     overall,
     focus,
+    safety: bank.safety,
     answeredCount: Object.keys(answers).length,
     complete: Object.keys(answers).length === bank.questions.length,
   };

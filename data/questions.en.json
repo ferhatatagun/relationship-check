@@ -43,6 +43,23 @@
       "high": "You are aligned on direction and values. Revisit your plans together from time to time."
     }
   },
+  "safety": {
+    "text": "This quiz is a self-reflection tool, not a diagnosis. If you ever feel afraid of your partner, are being hurt, threatened, controlled or forced to do things you do not want to, that is not a communication problem and it is not your fault. You deserve to be safe. If you are in immediate danger, call your local emergency number. You can also reach out to someone you trust or a domestic violence helpline, and keep your phone and search history private if it is not safe to be seen using them.",
+    "resources": [
+      {
+        "name": "Emergency (EU / many countries)",
+        "contact": "112"
+      },
+      {
+        "name": "US National Domestic Violence Hotline",
+        "contact": "1-800-799-7233"
+      },
+      {
+        "name": "UK National Domestic Abuse Helpline",
+        "contact": "0808 2000 247"
+      }
+    ]
+  },
   "questions": [
     { "id": "comm-1", "dimension": "communication", "text": "I can tell my partner what I really feel, even when it is uncomfortable." },
     { "id": "trust-1", "dimension": "trust", "text": "I believe my partner is honest with me." },

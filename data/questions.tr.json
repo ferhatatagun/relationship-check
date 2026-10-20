@@ -43,6 +43,27 @@
       "high": "Yön ve değerlerde uyumlusunuz. Planlarınıza zaman zaman birlikte bakın."
     }
   },
+  "safety": {
+    "text": "Bu test bir tanı aracı değil, kendi üzerine düşünme aracıdır. Partnerinizden korkuyorsanız; size zarar veriliyor, tehdit ediliyor, kontrol altında tutuluyor ya da istemediğiniz şeylere zorlanıyorsanız bu bir iletişim sorunu değildir ve sizin suçunuz değildir. Güvende olmayı hak ediyorsunuz. Acil bir tehlike varsa hemen 112'yi arayın. Güvendiğiniz biriyle ya da aşağıdaki hatlarla da iletişime geçebilirsiniz. Telefonunuzun kullanımı güvenli değilse arama ve ziyaret geçmişinizi gizli tutun.",
+    "resources": [
+      {
+        "name": "Acil Çağrı Merkezi",
+        "contact": "112"
+      },
+      {
+        "name": "ALO 183 Sosyal Destek Hattı",
+        "contact": "183"
+      },
+      {
+        "name": "Polis İmdat",
+        "contact": "155"
+      },
+      {
+        "name": "KADES (Kadın Acil Destek) mobil uygulaması",
+        "contact": "KADES"
+      }
+    ]
+  },
   "questions": [
     { "id": "comm-1", "dimension": "communication", "text": "Rahatsız edici olsa bile partnerime gerçekten ne hissettiğimi söyleyebilirim." },
     { "id": "trust-1", "dimension": "trust", "text": "Partnerimin bana karşı dürüst olduğuna inanıyorum." },
