@@ -1,0 +1,66 @@
+{
+  "locale": "tr",
+  "scale": {
+    "min": 1,
+    "max": 5,
+    "labels": ["Kesinlikle katılmıyorum", "Katılmıyorum", "Kararsızım", "Katılıyorum", "Kesinlikle katılıyorum"]
+  },
+  "dimensions": {
+    "communication": {
+      "label": "İletişim",
+      "low": "Önemli şeyler çoğu zaman söylenmiyor ya da yanlış anlaşılıyor. Telefonsuz, kısa bir haftalık sohbet deneyin.",
+      "mid": "Konuşuyorsunuz ama her zaman önemli konularda değil. Olguları değil, duyguları söylemeyi deneyin.",
+      "high": "Birbirinizi dinliyor ve açıkça paylaşıyorsunuz. Yoğun dönemlerde de buna yer açmaya devam edin."
+    },
+    "trust": {
+      "label": "Güven",
+      "low": "Şüphe ya da gizlilik ilişkiyi yıpratıyor. Endişelerinizi sakin ve somut biçimde dile getirin, açıklığın ne demek olduğunda anlaşın.",
+      "mid": "Güven büyük ölçüde var ama zayıf noktalar da var. Küçük sözlerde tutarlılık güveni en hızlı onarır.",
+      "high": "Birbirinizin yanında kendinizi güvende hissediyorsunuz. Küçük taahhütlere sadık kalmaya devam edin."
+    },
+    "conflict": {
+      "label": "Çatışma yönetimi",
+      "low": "Tartışmalar ya büyüyor ya da hiç açılmıyor. Bir mola işareti belirleyin, sakinleşince konuya dönün.",
+      "mid": "Anlaşmazlıkların çoğunu çözüyorsunuz ama bazı kalıplar tekrar ediyor. Tekrarlayan konunun ardındaki ihtiyacı arayın.",
+      "high": "Bağınıza zarar vermeden fikir ayrılığı yaşayabiliyorsunuz. Zor anlardan sonra hızlı onarmaya devam edin."
+    },
+    "intimacy": {
+      "label": "Yakınlık",
+      "low": "Duygusal ya da fiziksel olarak uzak hissediyor olabilirsiniz. Küçük günlük sevgi ve ilgi ritüelleriyle başlayın.",
+      "mid": "Yakınlık gelip gidiyor. Sadece ikinize ait zamanı koruyun.",
+      "high": "Bağlı ve değerli hissediyorsunuz. Birbirinize merak duymaya devam edin."
+    },
+    "future": {
+      "label": "Ortak gelecek",
+      "low": "Hedefleriniz ya da değerleriniz birbirinden uzaklaşıyor olabilir. Önümüzdeki yıllardan ne beklediğinizi açıkça konuşun.",
+      "mid": "Birçok hedefte örtüşüyorsunuz ama bazı büyük konuları hiç konuşmadınız. Onları masaya koyun.",
+      "high": "Yön ve değerlerde uyumlusunuz. Planlarınıza zaman zaman birlikte bakın."
+    }
+  },
+  "questions": [
+    { "id": "comm-1", "dimension": "communication", "text": "Rahatsız edici olsa bile partnerime gerçekten ne hissettiğimi söyleyebilirim." },
+    { "id": "comm-2", "dimension": "communication", "text": "Partnerim sözümü kesmeden ve savunmaya geçmeden beni dinler." },
+    { "id": "comm-3", "dimension": "communication", "text": "Günlük işlerin ötesinde de konuşuyoruz.", "weight": 1 },
+    { "id": "comm-4", "dimension": "communication", "text": "Dile getirmenin anlamsız olduğunu düşündüğüm için endişelerimi çoğu zaman kendime saklarım.", "reverse": true },
+
+    { "id": "trust-1", "dimension": "trust", "text": "Partnerimin bana karşı dürüst olduğuna inanıyorum." },
+    { "id": "trust-2", "dimension": "trust", "text": "Partnerim bir şeyi yapacağını söylediğinde yapar." },
+    { "id": "trust-3", "dimension": "trust", "text": "Ayrı olduğumuz zamanlarda kendimi güvende hissederim." },
+    { "id": "trust-4", "dimension": "trust", "text": "Bazen partnerimin telefonuna, mesajlarına bakar ya da nerede olduğunu kontrol ederim.", "reverse": true },
+
+    { "id": "conf-1", "dimension": "conflict", "text": "Kişisel saldırıya dönüşmeden fikir ayrılığı yaşayabiliyoruz." },
+    { "id": "conf-2", "dimension": "conflict", "text": "Tartışmadan sonra barışıyor ve sorunu gerçekten çözüyoruz." },
+    { "id": "conf-3", "dimension": "conflict", "text": "Gerginlik anında ikimizden biri ara istediğinde buna saygı gösteriliyor." },
+    { "id": "conf-4", "dimension": "conflict", "text": "Aynı tartışmalar bir ilerleme olmadan tekrar edip duruyor.", "reverse": true },
+
+    { "id": "int-1", "dimension": "intimacy", "text": "Partnerime duygusal olarak yakın hissediyorum." },
+    { "id": "int-2", "dimension": "intimacy", "text": "İlişkimizdeki fiziksel yakınlıktan memnunuz." },
+    { "id": "int-3", "dimension": "intimacy", "text": "Sadece ikimize ait zaman ayırıyoruz." },
+    { "id": "int-4", "dimension": "intimacy", "text": "Birlikteyken bile kendimi yalnız hissediyorum.", "reverse": true },
+
+    { "id": "fut-1", "dimension": "future", "text": "Önümüzdeki beş yıl için hayattan benzer şeyler istiyoruz." },
+    { "id": "fut-2", "dimension": "future", "text": "Benim için en önemli temel değerleri paylaşıyoruz." },
+    { "id": "fut-3", "dimension": "future", "text": "Uzun vadede hâlâ birlikte ve mutlu olduğumuzu hayal edebiliyorum." },
+    { "id": "fut-4", "dimension": "future", "text": "Cevaptan korktuğum için gelecekle ilgili büyük kararları açmaktan kaçınıyorum.", "reverse": true }
+  ]
+}
